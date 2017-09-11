@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textColor="@color/text_black_color"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_gender_man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.5"
+            android:text="男"
+            android:textColor="@color/text_black_color"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            android:id="@+id/cb_gender_man"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="false" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_gender_woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.5"
+            android:text="女"
+            android:textColor="@color/text_black_color"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            android:id="@+id/cb_gender_woman"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="false" />
+
+    </LinearLayout>
+</LinearLayout>

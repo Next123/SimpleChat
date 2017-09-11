@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/new_message_remind"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <cn.bmob.imdemo.ui.widget.SwitchButton
+            android:id="@+id/sb_accept_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            switch:bmHeight="25.5dp"
+            switch:bmWidth="42dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.5dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/sound_notice"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <cn.bmob.imdemo.ui.widget.SwitchButton
+                android:id="@+id/sb_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                switch:bmHeight="25.5dp"
+                switch:bmWidth="42dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#dfdfdd" />
+
+        <RelativeLayout
+            android:id="@+id/rl_select_sound"
+            android:layout_width="match_parent"
+            android:layout_height="45.5dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/select_sound"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_select_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="14dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#dfdfdd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.5dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/shake_notice"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <cn.bmob.imdemo.ui.widget.SwitchButton
+                android:id="@+id/sb_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                switch:bmHeight="25.5dp"
+                switch:bmWidth="42dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
