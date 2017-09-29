@@ -1,12 +1,8 @@
 package cn.bmob.imdemo;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.media.RingtoneManager;
 import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
@@ -26,10 +22,7 @@ import cn.bmob.imdemo.event.RefreshEvent;
 import cn.bmob.imdemo.model.UserModel;
 import cn.bmob.imdemo.model.i.UpdateCacheListener;
 import cn.bmob.imdemo.ui.activity.MainActivity;
-import cn.bmob.imdemo.util.Const;
 import cn.bmob.imdemo.util.ImageDownload;
-import cn.bmob.imdemo.util.RingtoneUtils;
-import cn.bmob.imdemo.util.SPUtils;
 import cn.bmob.newim.bean.BmobIMMessage;
 import cn.bmob.newim.bean.BmobIMMessageType;
 import cn.bmob.newim.bean.BmobIMUserInfo;
