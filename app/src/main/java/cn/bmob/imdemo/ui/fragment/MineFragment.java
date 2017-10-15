@@ -108,7 +108,7 @@ public class MineFragment extends BaseFragment {
                 break;
             //反馈
             case R.id.mine_feedback:
-                Toast.makeText(getActivity(), "什么？你有意见？", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "什么！你还有意见？", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mine_helper:
                 startActivity(HelperActivity.class,null,false);

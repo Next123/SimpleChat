@@ -2,6 +2,15 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="D:\Android\Projects\SimpleChat\app\libs\Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4f11330834f00ecbf76acef91a5e3be24b99f9fd">
+        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\pre-dexed\release\Msc_b963dfc2f95feaf82c808b44c26906f43bb41ec9.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="D:\Android\Projects\SimpleChat\app\libs\universal-image-loader-1.9.5.jar"
         jumboMode="true"
@@ -9,6 +18,15 @@
         revision="25.0.3"
         sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
         <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.5_228dd212205007c5e16e8949ab051ff4a99da23c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Projects\SimpleChat\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_228dd212205007c5e16e8949ab051ff4a99da23c.jar" />
     </item>
     <item
         is-multidex="true"
@@ -21,12 +39,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\Android\Projects\SimpleChat\app\libs\universal-image-loader-1.9.5.jar"
+        jar="D:\Android\Projects\SimpleChat\app\libs\Sunflower.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
-        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_228dd212205007c5e16e8949ab051ff4a99da23c.jar" />
+        sha1="a4153c18041f8ba43c72296eb40d36176d51fae1">
+        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\pre-dexed\release\Sunflower_48608dbbd1823b3ba6197f6178d940a876ecc75c.jar" />
     </item>
     <item
         is-multidex="true"

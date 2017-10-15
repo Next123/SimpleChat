@@ -26,7 +26,7 @@
     <application
         android:name=".BmobIMApplication"
         android:allowBackup="true"
-        android:icon="@drawable/simple_chat_log"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

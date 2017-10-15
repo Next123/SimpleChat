@@ -86,5 +86,6 @@
     <string name="avatar">Avatar</string>
     <string name="about_simple_chat">About SimpleChat</string>
     <string name="helper">Helper</string>
-
+    <string name="nickname">NickName</string>
+    <string name="cancel">Cancel</string>
 </resources>
