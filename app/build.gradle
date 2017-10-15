@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "cn.bmob.imdemo"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 23
         versionCode 2
         versionName "1.0.2"
@@ -51,16 +51,21 @@ android {
         exclude 'META-INF/rxjava.properties'
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile('com.android.support:appcompat-v7:22.2.0') {
         exclude module: 'support-annotations'
     }
     //bmob-im:自2.0.5开始提供aar格式：包含BmobNewIM_xxxx.jar、androidasync_2.1.6.jar、bmob_im_notification_strings.xml
-
     //bmob-sdk:3.5.5
     //汉字转拼音
     compile 'com.android.support:recyclerview-v7:22.2.0'
@@ -71,7 +76,10 @@ dependencies {
     compile 'cn.bmob.android:bmob-im:2.0.8@aar'
     compile 'cn.bmob.android:bmob-sdk:3.5.5'
     compile 'com.github.promeg:tinypinyin:1.0.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'io.github.rockerhieu:emojicon:1.4.1'
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.kymjs.rxvolley:rxvolley:1.1.4'
 }

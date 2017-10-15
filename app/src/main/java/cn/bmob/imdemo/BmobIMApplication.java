@@ -1,8 +1,11 @@
 package cn.bmob.imdemo;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Handler;
 
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 import com.orhanobut.logger.Logger;
 
 import java.io.BufferedReader;
@@ -10,6 +13,7 @@ import java.io.File;
 import java.io.FileReader;
 
 import cn.bmob.imdemo.base.UniversalImageLoader;
+import cn.bmob.imdemo.util.Const;
 import cn.bmob.newim.BmobIM;
 
 /**
@@ -17,12 +21,14 @@ import cn.bmob.newim.BmobIM;
  * @project:BmobIMApplication
  * @date :2016-01-13-10:19
  */
-public class BmobIMApplication extends Application{
+public class BmobIMApplication extends Application {
 
     private static BmobIMApplication INSTANCE;
-    public static BmobIMApplication INSTANCE(){
+
+    public static BmobIMApplication INSTANCE() {
         return INSTANCE;
     }
+
     private void setInstance(BmobIMApplication app) {
         setBmobIMApplication(app);
     }
@@ -36,6 +42,9 @@ public class BmobIMApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //讯飞语音听写 初始化
+        SpeechUtility.createUtility(this, SpeechConstant.APPID + "=" + Const.IFLYTEK_ID);
         setInstance(this);
         handler = new Handler();
 
@@ -43,7 +52,7 @@ public class BmobIMApplication extends Application{
         Logger.init("zhangchaozhou");
         //只有主进程运行的时候才需要初始化
 
-        if (getApplicationInfo().packageName.equals(getMyProcessName())){
+        if (getApplicationInfo().packageName.equals(getMyProcessName())) {
             //im初始化
             BmobIM.init(this);
             //注册消息接收器
@@ -55,6 +64,7 @@ public class BmobIMApplication extends Application{
 
     /**
      * 获取当前运行的进程名
+     *
      * @return
      */
     public static String getMyProcessName() {
@@ -70,7 +80,8 @@ public class BmobIMApplication extends Application{
         }
     }
 
-    public static Handler getHandler(){
+    public static Handler getHandler() {
         return handler;
     }
+
 }

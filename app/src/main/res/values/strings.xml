@@ -86,6 +86,7 @@
     <string name="nickname">昵称</string>
     <string name="avatar">头像</string>
     <string name="about_simple_chat">关于简聊</string>
+    <string name="helper">在线助手</string>
     <string name="cancel">取消</string>
 
 </resources>

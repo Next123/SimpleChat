@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -21,6 +22,7 @@ import cn.bmob.imdemo.bean.User;
 import cn.bmob.imdemo.model.UserModel;
 import cn.bmob.imdemo.ui.activity.AboutActivity;
 import cn.bmob.imdemo.ui.activity.AccountSettingActivity;
+import cn.bmob.imdemo.ui.activity.HelperActivity;
 import cn.bmob.imdemo.ui.activity.MyAccountActivity;
 import cn.bmob.imdemo.ui.activity.NewMessageRemindActivity;
 
@@ -89,7 +91,7 @@ public class MineFragment extends BaseFragment {
         ButterKnife.unbind(this);
     }
 
-    @OnClick({R.id.start_user_profile, R.id.mine_setting, R.id.mine_message, R.id.mine_feedback, R.id.mine_about})
+    @OnClick({R.id.start_user_profile, R.id.mine_setting, R.id.mine_message, R.id.mine_feedback,R.id.mine_helper, R.id.mine_about})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             //用户信息
@@ -106,6 +108,10 @@ public class MineFragment extends BaseFragment {
                 break;
             //反馈
             case R.id.mine_feedback:
+                Toast.makeText(getActivity(), "什么？你有意见？", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mine_helper:
+                startActivity(HelperActivity.class,null,false);
                 break;
             //关于
             case R.id.mine_about:

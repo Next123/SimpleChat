@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="dca636fda15e905021ea8e51c800918db08ab18e">
+        sha1="67463e957fa00e732092c82e866766fd2a3a5cea">
         <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a7fa5b59832b5d2daad9769178b2d2d1062e47ad\classes.dex" />
     </item>
     <item
@@ -30,12 +30,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Android\Projects\SimpleChat\app\libs\Sunflower.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a4153c18041f8ba43c72296eb40d36176d51fae1">
+        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\transforms\dex\debug\folders\1000\2\Sunflower_48608dbbd1823b3ba6197f6178d940a876ecc75c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\Projects\SimpleChat\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_53001b50a095703e66b29d2a1be21c3aa432cced\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\Projects\SimpleChat\app\libs\Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4f11330834f00ecbf76acef91a5e3be24b99f9fd">
+        <dex dex="D:\Android\Projects\SimpleChat\app\build\intermediates\transforms\dex\debug\folders\1000\2\Msc_b963dfc2f95feaf82c808b44c26906f43bb41ec9\classes.dex" />
     </item>
 
 </items>

@@ -85,5 +85,6 @@
     <string name="gender">Gender</string>
     <string name="avatar">Avatar</string>
     <string name="about_simple_chat">About SimpleChat</string>
+    <string name="helper">Helper</string>
 
 </resources>
